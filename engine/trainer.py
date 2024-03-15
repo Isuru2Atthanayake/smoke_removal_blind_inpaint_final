@@ -17,7 +17,7 @@ from utils.data_utils import linear_scaling, linear_unscaling, get_random_string
 
 # torch.autograd.set_detect_anomaly(True)
 
-
+# dlkfd 
 class Trainer:
     def __init__(self, opt):
         print("we are at trainer")
@@ -58,6 +58,7 @@ class Trainer:
         self.mask_smoother = ConfidenceDrivenMaskLayer(self.opt.MASK.GAUS_K_SIZE, self.opt.MASK.SIGMA)
         # self.mask_smoother = GaussianSmoothing(1, 5, 1/40)
 
+        # initializes a transformation to convert tensors back to PIL (Python Imaging Library) images.
         self.to_pil = transforms.ToPILImage()
 
         self.mpn = MPN(base_n_channels=self.opt.MODEL.MPN.NUM_CHANNELS, neck_n_channels=self.opt.MODEL.MPN.NECK_CHANNELS)
@@ -68,6 +69,7 @@ class Trainer:
         self.optimizer_mpn = torch.optim.Adam(self.mpn.parameters(), lr=self.opt.MODEL.MPN.LR, betas=self.opt.MODEL.MPN.BETAS)
         self.optimizer_rin = torch.optim.Adam(self.rin.parameters(), lr=self.opt.MODEL.RIN.LR, betas=self.opt.MODEL.RIN.BETAS)
         self.optimizer_discriminator = torch.optim.Adam(list(self.discriminator.parameters()) + list(self.patch_discriminator.parameters()), lr=self.opt.MODEL.D.LR, betas=self.opt.MODEL.D.BETAS)
+        # joint model (combination of MPN and RIN). This is used after a certain number of steps.
         self.optimizer_joint = torch.optim.Adam(list(self.mpn.parameters()) + list(self.rin.parameters()), lr=self.opt.MODEL.JOINT.LR, betas=self.opt.MODEL.JOINT.BETAS)
 
         self.num_step = self.opt.TRAIN.START_STEP
@@ -78,6 +80,7 @@ class Trainer:
 
         self.check_and_use_multi_gpu()
 
+        # Loss Function Initialization( weighted binary cross-entropy loss, reconstruction loss (L1 loss), semantic consistency loss, and texture consistency loss.)
         self.weighted_bce_loss = WeightedBCELoss().cuda()
         self.reconstruction_loss = torch.nn.L1Loss().cuda()
         self.semantic_consistency_loss = SemanticConsistencyLoss().cuda()
@@ -157,6 +160,19 @@ class Trainer:
             if self.num_step % self.opt.TRAIN.SAVE_INTERVAL == 0 and self.num_step != 0:
                 self.do_checkpoint(self.num_step)
 
+            # # Get a sample batch of images
+            # print("Sample batch of images here started")
+            # sample_images, _ = next(iter(self.image_loader))
+            #
+            # # Visualize the first image in the batch
+            # sample_image = sample_images[0].permute(1, 2, 0)  # Convert from tensor to PIL image
+            # sample_image = self.to_pil(sample_image)  # Convert to PIL format using the 'to_pil' transformation
+            #
+            # # Display the sample image
+            # plt.imshow(sample_image)
+            # plt.axis('off')
+            # plt.show()
+            # print("Sample batch of images here ended")
     # print("Training loop ended.")
 
 # To check the input data
@@ -407,6 +423,8 @@ class RaindropTrainer(Trainer):
         else:
             print("Dataset loaded Dataset size:", len(self.dataset))
 
+
+
         print("a")
         self.image_loader = data.DataLoader(dataset=self.dataset, batch_size=self.opt.TRAIN.BATCH_SIZE, shuffle=self.opt.TRAIN.SHUFFLE, num_workers=self.opt.SYSTEM.NUM_WORKERS)
         print("b")
@@ -444,6 +462,17 @@ class RaindropTrainer(Trainer):
             imgs = linear_scaling(imgs.float().cuda())
             y_imgs = y_imgs.float().cuda()
 
+            # this method is used to display a sample image from the loaded dataset start
+            # def display_sample_image(self):
+            # print("display_sample_image method started")
+            # """Display a sample image from the loaded dataset."""
+            # sample_img, _ = next(iter(self.image_loader))
+            # plt.imshow(self.to_pil(sample_img[0].cpu()))
+            # plt.axis('off')
+            # plt.show()
+            # print("display_sample_image method ended")
+            # this method is used to display a sample image from the[p;''''''''''' loaded dataset end
+
 
             for _ in range(self.opt.MODEL.D.NUM_CRITICS):
                 print("for _ in range(self.opt.MODEL.D.NUM_CRITICS): started")
@@ -476,11 +505,11 @@ class RaindropTrainer(Trainer):
             else:
                 output = self.rin(imgs, pred_masks.detach(), neck.detach())
 
-            # Add the following line to print the raw predicted masks
-            # print("Predicted Masks (raw):", pred_masks[idx])
+        # Add the following line to print the raw predicted masks
+            # print("Predicted Masks (raw):", pred_masks)
             #
             # # Plot the raw predicted masks
-            # plt.imshow(pred_masks[idx].cpu().squeeze(), cmap='gray')
+            # plt.imshow(pred_masks.cpu().squeeze(), cmap='gray')
             # plt.title("Predicted Masks (raw)")
             # plt.colorbar()
             # plt.show()
@@ -528,17 +557,19 @@ class RaindropTrainer(Trainer):
                 print("Content of predicted masks (first pixel):", pred_masks[idx][0, 0])
                 print("Content of output (first pixel):", output[idx][0, 0, 0])
 
-                # Plot the images
-                fig, axes = plt.subplots(1, 4, figsize=(15, 5))
-                axes[0].imshow(self.to_pil(y_imgs[idx].cpu()))
-                axes[0].set_title("Original Image")
-                axes[1].imshow(self.to_pil(linear_unscaling(imgs[idx]).cpu()))
-                axes[1].set_title("Masked Image")
-                axes[2].imshow(self.to_pil(pred_masks[idx].cpu()))
-                axes[2].set_title("Predicted Masks")
-                axes[3].imshow(self.to_pil(torch.clamp(output, min=0., max=1.)[idx].cpu()))
-                axes[3].set_title("Output")
-                plt.show()
+        # Plot the images
+                # fig, axes = plt.subplots(1, 4, figsize=(15, 5))
+                # axes[0].imshow(self.to_pil(y_imgs[idx].cpu()))
+                # axes[0].set_title("Original Image")
+                # axes[1].imshow(self.to_pil(linear_unscaling(imgs[idx]).cpu()))
+                # axes[1].set_title("Masked Image")
+                # axes[2].imshow(self.to_pil(pred_masks[idx].cpu()))
+                # axes[2].set_title("Predicted Masks")
+                # axes[3].imshow(self.to_pil(torch.clamp(output, min=0., max=1.)[idx].cpu()))
+                # axes[3].set_title("Output")
+        # plt.show()
+
+                # Plot the images ends
 
                 self.wandb.log({"examples": [
                     self.wandb.Image(self.to_pil(y_imgs[idx].cpu()), caption="original_image"),
@@ -568,6 +599,17 @@ class RaindropTrainer(Trainer):
                 self.do_checkpoint(self.num_step)
                 print("Logging and visualization of RAINDROP_LOG_INTERVAL d ")
         print("RaindropTrainer run method ended")
+
+    # # this method is used to display a sample image from the loaded dataset start
+    # def display_sample_image(self):
+    #     print("display_sample_image method started")
+    #     """Display a sample image from the loaded dataset."""
+    #     sample_img, _ = next(iter(self.image_loader))
+    #     plt.imshow(self.to_pil(sample_img[0].cpu()))
+    #     plt.axis('off')
+    #     plt.show()
+    #     print("display_sample_image method ended")
+    # # this method is used to display a sample image from the[p;''''''''''' loaded dataset end
     def do_checkpoint(self, num_step):
         print("do_checkpoint method started")
         if not os.path.exists("./{}/{}".format(self.opt.TRAIN.SAVE_DIR, self.model_name)):
