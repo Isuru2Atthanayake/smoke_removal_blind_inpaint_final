@@ -1,0 +1,243 @@
+Dataset loaded Dataset size: 696
+a
+b
+c
+Initializing MPN, RIN, and Discriminator...
+Models initialized.
+Initializing optimizers...
+Optimizers initialized.
+g
+load_checkpoints method started
+Error loading checkpoints: 'NoneType' object has no attribute 'seek'. You can only torch.load from a file that is seekable. Please pre-load the data into a buffer like io.BytesIO and try to load from it instead.
+load_checkpoints method ended
+h
+i
+RaindropTrainer class end
+Starting the run method of RaindropTrainer...
+I0227 15:12:13.975577 17508 trainer.py:427] Checkpoints loading...
+I0227 15:12:13.978653 17508 trainer.py:608] GPU ID: 0
+W0227 15:12:14.051572 17508 warnings.py:109] C:\Users\sevitha\anaconda3\envs\smoke2\lib\site-packages\torchvision\models\_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+W0227 15:12:14.052610 17508 warnings.py:109] C:\Users\sevitha\anaconda3\envs\smoke2\lib\site-packages\torchvision\models\_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG19_Weights.IMAGENET1K_V1`. You can also use `weights=VGG19_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Batch loaded. Image shape: torch.Size([4, 3, 256, 256]) Label shape: torch.Size([4, 3, 256, 256])
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+W0227 15:12:36.721714 17508 warnings.py:109] F:\IIT_final_yr\Myproject\FypModel\lastTest\project8copies\proj8test2\losses\adversarial.py:15: UserWarning: The torch.cuda.*DtypeTensor constructors are no longer recommended. It's best to use methods such as torch.tensor(data, dtype=*, device='cuda') to create tensors. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\builder\windows\pytorch\torch\csrc\tensor\python_tensor.cpp:85.)
+  alpha = Tensor(np.random.random((real_samples.size(0), 1, 1, 1)))
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+pred_masks shape: torch.Size([4, 1, 256, 256])
+embracing the model
+End of embracing the model
+Batch loaded. Image shape: torch.Size([4, 3, 256, 256]) Label shape: torch.Size([4, 3, 256, 256])
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+pred_masks shape: torch.Size([4, 1, 256, 256])
+embracing the model
+End of embracing the model
+Batch loaded. Image shape: torch.Size([4, 3, 256, 256]) Label shape: torch.Size([4, 3, 256, 256])
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+pred_masks shape: torch.Size([4, 1, 256, 256])
+embracing the model
+End of embracing the model
+Batch loaded. Image shape: torch.Size([4, 3, 256, 256]) Label shape: torch.Size([4, 3, 256, 256])
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+pred_masks shape: torch.Size([4, 1, 256, 256])
+embracing the model
+End of embracing the model
+Batch loaded. Image shape: torch.Size([4, 3, 256, 256]) Label shape: torch.Size([4, 3, 256, 256])
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+pred_masks shape: torch.Size([4, 1, 256, 256])
+embracing the model
+End of embracing the model
+Batch loaded. Image shape: torch.Size([4, 3, 256, 256]) Label shape: torch.Size([4, 3, 256, 256])
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+pred_masks shape: torch.Size([4, 1, 256, 256])
+embracing the model
+End of embracing the model
+Batch loaded. Image shape: torch.Size([4, 3, 256, 256]) Label shape: torch.Size([4, 3, 256, 256])
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+pred_masks shape: torch.Size([4, 1, 256, 256])
+embracing the model
+End of embracing the model
+Batch loaded. Image shape: torch.Size([4, 3, 256, 256]) Label shape: torch.Size([4, 3, 256, 256])
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+pred_masks shape: torch.Size([4, 1, 256, 256])
+embracing the model
+End of embracing the model
+Batch loaded. Image shape: torch.Size([4, 3, 256, 256]) Label shape: torch.Size([4, 3, 256, 256])
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+pred_masks shape: torch.Size([4, 1, 256, 256])
+embracing the model
+End of embracing the model
+Batch loaded. Image shape: torch.Size([4, 3, 256, 256]) Label shape: torch.Size([4, 3, 256, 256])
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+pred_masks shape: torch.Size([4, 1, 256, 256])
+embracing the model
+End of embracing the model
+Batch loaded. Image shape: torch.Size([4, 3, 256, 256]) Label shape: torch.Size([4, 3, 256, 256])
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+pred_masks shape: torch.Size([4, 1, 256, 256])
+embracing the model
+End of embracing the model
+Batch loaded. Image shape: torch.Size([4, 3, 256, 256]) Label shape: torch.Size([4, 3, 256, 256])
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+pred_masks shape: torch.Size([4, 1, 256, 256])
+embracing the model
+End of embracing the model
+Batch loaded. Image shape: torch.Size([4, 3, 256, 256]) Label shape: torch.Size([4, 3, 256, 256])
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+pred_masks shape: torch.Size([4, 1, 256, 256])
+embracing the model
+End of embracing the model
+Batch loaded. Image shape: torch.Size([4, 3, 256, 256]) Label shape: torch.Size([4, 3, 256, 256])
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+pred_masks shape: torch.Size([4, 1, 256, 256])
+embracing the model
+End of embracing the model
+Batch loaded. Image shape: torch.Size([4, 3, 256, 256]) Label shape: torch.Size([4, 3, 256, 256])
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+pred_masks shape: torch.Size([4, 1, 256, 256])
+embracing the model
+End of embracing the model
+Batch loaded. Image shape: torch.Size([4, 3, 256, 256]) Label shape: torch.Size([4, 3, 256, 256])
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+pred_masks shape: torch.Size([4, 1, 256, 256])
+embracing the model
+End of embracing the model
+Batch loaded. Image shape: torch.Size([4, 3, 256, 256]) Label shape: torch.Size([4, 3, 256, 256])
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+pred_masks shape: torch.Size([4, 1, 256, 256])
+embracing the model
+End of embracing the model
+Batch loaded. Image shape: torch.Size([4, 3, 256, 256]) Label shape: torch.Size([4, 3, 256, 256])
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+pred_masks shape: torch.Size([4, 1, 256, 256])
+embracing the model
+End of embracing the model
+Batch loaded. Image shape: torch.Size([4, 3, 256, 256]) Label shape: torch.Size([4, 3, 256, 256])
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+for _ in range(self.opt.MODEL.D.NUM_CRITICS): started
+pred_masks shape: torch.Size([4, 1, 256, 256])
+embracing the model
+I0227 15:29:39.819925 17508 trainer.py:503]  [Step: 20/302000 (0.006622516556291391%)] D Loss: -225.22250366210938 G Loss: 0.0979943722486496
+End of embracing the model
+Logging and visualization of RAINDROP_LOG_INTERVAL a
+Logging and visualization of RAINDROP_LOG_INTERVAL b
+Shape of original image: torch.Size([3, 256, 256])
+Shape of masked image: torch.Size([3, 256, 256])
+Shape of predicted masks: torch.Size([1, 256, 256])
+Shape of output: torch.Size([3, 256, 256])
+Content of original image (first pixel): tensor(0., device='cuda:0')
+Content of masked image (first pixel): tensor(0.9843, device='cuda:0')
+Content of predicted masks (first pixel): tensor([0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000,
+        0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000,
+        0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000,
+        0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000,
+        0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000,
+        0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000,
+        0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000,
+        0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000,
+        0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000,
+        0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000,
+        0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000,
+        0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000,
+        0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000,
+        0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000,
+        0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000,
+        0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000,
+        0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000,
+        0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000,
+        0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000,
+        0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000,
+        0.5001, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000,
+        0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000,
+        0.5000, 0.5000, 0.5001, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000,
+        0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000,
+        0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000,
+        0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000,
+        0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000,
+        0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000,
+        0.5000, 0.5000, 0.5000, 0.5000], device='cuda:0',
+       grad_fn=<SelectBackward0>)
+Content of output (first pixel): tensor(0.0064, device='cuda:0', grad_fn=<SelectBackward0>)
+W0227 15:29:43.105654 17508 warnings.py:109] C:\Users\sevitha\anaconda3\envs\smoke2\lib\site-packages\pandas\_testing.py:24: FutureWarning: In the future `np.bool` will be defined as the corresponding NumPy scalar.
+  import pandas._libs.testing as _testing
+An AttributeError occurred: module 'numpy' has no attribute 'bool'.
+`np.bool` was a deprecated alias for the builtin `bool`. To avoid this error in existing code, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+The aliases was originally deprecated in NumPy 1.20; for more details and guidance see the original release note at:
+    https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+This could be due to the use of deprecated NumPy aliases.
+Consider updating your code to use 'bool' instead of 'np.bool'.

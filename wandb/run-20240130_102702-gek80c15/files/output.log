@@ -1,0 +1,12 @@
+
+No dataset loaded.
+Traceback (most recent call last):
+  File "F:\IIT_final_yr\Myproject\FypModel\pythonProject8\main.py", line 53, in <module>
+    trainer = Trainer(cfg) if not cfg.MODEL.RAINDROP_TUNE else RaindropTrainer(cfg)
+  File "F:\IIT_final_yr\Myproject\FypModel\pythonProject8\engine\trainer.py", line 342, in __init__
+    self.image_loader = data.DataLoader(dataset=self.dataset, batch_size=self.opt.TRAIN.BATCH_SIZE, shuffle=self.opt.TRAIN.SHUFFLE, num_workers=self.opt.SYSTEM.NUM_WORKERS)
+  File "C:\Users\sevitha\AppData\Roaming\Python\Python38\site-packages\torch\utils\data\dataloader.py", line 351, in __init__
+    sampler = RandomSampler(dataset, generator=generator)  # type: ignore[arg-type]
+  File "C:\Users\sevitha\AppData\Roaming\Python\Python38\site-packages\torch\utils\data\sampler.py", line 107, in __init__
+    raise ValueError("num_samples should be a positive integer "
+ValueError: num_samples should be a positive integer value, but got num_samples=0

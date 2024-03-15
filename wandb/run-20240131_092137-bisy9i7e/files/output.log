@@ -1,0 +1,27 @@
+Train directory: F:/IIT_final_yr/Myproject/FypModel/pythonProject8/datasets/smoke_dataset\train
+Mask directory: F:/IIT_final_yr/Myproject/FypModel/pythonProject8/datasets/smoke_dataset\train\mask
+Dataset loaded Dataset size: 696
+I0131 09:21:53.866862 16836 trainer.py:355] Checkpoints loading...
+Traceback (most recent call last):
+  File "C:\Users\sevitha\AppData\Roaming\Python\Python38\site-packages\torch\serialization.py", line 354, in _check_seekable
+    f.seek(f.tell())
+AttributeError: 'NoneType' object has no attribute 'seek'
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "F:\IIT_final_yr\Myproject\FypModel\pythonProject8\main.py", line 54, in <module>
+    trainer = Trainer(cfg) if not cfg.MODEL.RAINDROP_TUNE else RaindropTrainer(cfg)
+  File "F:\IIT_final_yr\Myproject\FypModel\pythonProject8\engine\trainer.py", line 356, in __init__
+    self.load_checkpoints(self.opt.TRAIN.START_STEP)
+  File "F:\IIT_final_yr\Myproject\FypModel\pythonProject8\engine\trainer.py", line 452, in load_checkpoints
+    checkpoints = torch.load(self.opt.MODEL.RAINDROP_WEIGHTS)
+  File "C:\Users\sevitha\AppData\Roaming\Python\Python38\site-packages\torch\serialization.py", line 791, in load
+    with _open_file_like(f, 'rb') as opened_file:
+  File "C:\Users\sevitha\AppData\Roaming\Python\Python38\site-packages\torch\serialization.py", line 276, in _open_file_like
+    return _open_buffer_reader(name_or_buffer)
+  File "C:\Users\sevitha\AppData\Roaming\Python\Python38\site-packages\torch\serialization.py", line 261, in __init__
+    _check_seekable(buffer)
+  File "C:\Users\sevitha\AppData\Roaming\Python\Python38\site-packages\torch\serialization.py", line 357, in _check_seekable
+    raise_err_msg(["seek", "tell"], e)
+  File "C:\Users\sevitha\AppData\Roaming\Python\Python38\site-packages\torch\serialization.py", line 350, in raise_err_msg
+    raise type(e)(msg)
+AttributeError: 'NoneType' object has no attribute 'seek'. You can only torch.load from a file that is seekable. Please pre-load the data into a buffer like io.BytesIO and try to load from it instead.

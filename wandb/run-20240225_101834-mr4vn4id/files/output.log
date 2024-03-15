@@ -1,0 +1,24 @@
+I0225 10:18:43.043924 7328 trainer.py:374] Checkpoints loading...
+Traceback (most recent call last):
+  File "F:\IIT_final_yr\Myproject\FypModel\proj8test\main.py", line 58, in <module>
+    trainer = Trainer(cfg) if not cfg.MODEL.RAINDROP_TUNE else RaindropTrainer(cfg)
+  File "F:\IIT_final_yr\Myproject\FypModel\proj8test\engine\trainer.py", line 377, in __init__
+    self.check_and_use_multi_gpu()
+  File "F:\IIT_final_yr\Myproject\FypModel\proj8test\engine\trainer.py", line 501, in check_and_use_multi_gpu
+    log.info("GPU ID: {}".format(torch.cuda.current_device()))
+  File "C:\Users\sevitha\anaconda3\envs\smoke2\lib\site-packages\torch\cuda\__init__.py", line 482, in current_device
+    _lazy_init()
+  File "C:\Users\sevitha\anaconda3\envs\smoke2\lib\site-packages\torch\cuda\__init__.py", line 211, in _lazy_init
+    raise AssertionError("Torch not compiled with CUDA enabled")
+AssertionError: Torch not compiled with CUDA enabled
+Dataset loaded Dataset size: 696
+a
+b
+c
+Initializing MPN, RIN, and Discriminator...
+Models initialized.
+Initializing optimizers...
+Optimizers initialized.
+g
+Error loading checkpoints: 'NoneType' object has no attribute 'seek'. You can only torch.load from a file that is seekable. Please pre-load the data into a buffer like io.BytesIO and try to load from it instead.
+h

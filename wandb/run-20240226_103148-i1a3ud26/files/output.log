@@ -1,0 +1,25 @@
+Dataset loaded Dataset size: 696
+a
+b
+c
+Initializing MPN, RIN, and Discriminator...
+Models initialized.
+Initializing optimizers...
+Optimizers initialized.
+g
+Error loading checkpoints: 'NoneType' object has no attribute 'seek'. You can only torch.load from a file that is seekable. Please pre-load the data into a buffer like io.BytesIO and try to load from it instead.
+h
+i
+I0226 10:31:54.184486 15496 trainer.py:416] Checkpoints loading...
+I0226 10:31:54.188719 15496 trainer.py:543] GPU ID: 0
+W0226 10:31:54.255924 15496 warnings.py:109] C:\Users\sevitha\anaconda3\envs\smoke2\lib\site-packages\torchvision\models\_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+W0226 10:31:54.255924 15496 warnings.py:109] C:\Users\sevitha\anaconda3\envs\smoke2\lib\site-packages\torchvision\models\_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG19_Weights.IMAGENET1K_V1`. You can also use `weights=VGG19_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+raindrop over
+Batch loaded. Image shape: torch.Size([4, 3, 256, 256]) Label shape: torch.Size([4, 3, 256, 256])
+W0226 10:32:17.352165 15496 warnings.py:109] F:\IIT_final_yr\Myproject\FypModel\lastTest\project8copies\proj8test1\losses\adversarial.py:15: UserWarning: The torch.cuda.*DtypeTensor constructors are no longer recommended. It's best to use methods such as torch.tensor(data, dtype=*, device='cuda') to create tensors. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\builder\windows\pytorch\torch\csrc\tensor\python_tensor.cpp:85.)
+  alpha = Tensor(np.random.random((real_samples.size(0), 1, 1, 1)))
+An AttributeError occurred: 'int' object has no attribute 'item'
+This could be due to the use of deprecated NumPy aliases.
+Consider updating your code to use 'bool' instead of 'np.bool'.

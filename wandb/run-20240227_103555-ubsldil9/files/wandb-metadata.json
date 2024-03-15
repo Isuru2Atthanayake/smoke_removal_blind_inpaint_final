@@ -1,0 +1,47 @@
+{
+    "os": "Windows-10-10.0.22621-SP0",
+    "python": "3.8.18",
+    "heartbeatAt": "2024-02-27T05:05:58.042538",
+    "startedAt": "2024-02-27T05:05:55.372696",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "F:\\IIT_final_yr\\Myproject\\FypModel\\lastTest\\project8copies\\proj8test2\\main.py",
+    "codePathLocal": "main.py",
+    "codePath": "main.py",
+    "host": "LAPTOP-M6LR1M8T",
+    "username": "sevitha",
+    "executable": "C:\\Users\\sevitha\\anaconda3\\envs\\smoke2\\python.exe",
+    "cpu_count": 4,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 3302.0,
+        "min": 0.0,
+        "max": 3302.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3302.0,
+            "min": 0.0,
+            "max": 3302.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 230.99937438964844,
+            "used": 179.6784782409668
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 3050 Laptop GPU",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+            "memory_total": 4294967296
+        }
+    ],
+    "memory": {
+        "total": 15.751945495605469
+    }
+}

@@ -1,0 +1,24 @@
+Train directory: F:/IIT_final_yr/Myproject/FypModel/pythonProject8/datasets/smoke_dataset\train
+Mask directory: F:/IIT_final_yr/Myproject/FypModel/pythonProject8/datasets/smoke_dataset\train\mask
+Dataset loaded Dataset size: 696
+a
+b
+c
+e
+f
+g
+I0131 09:56:48.740260 1948 trainer.py:358] Checkpoints loading...
+Traceback (most recent call last):
+  File "F:\IIT_final_yr\Myproject\FypModel\pythonProject8\main.py", line 57, in <module>
+    trainer = Trainer(cfg) if not cfg.MODEL.RAINDROP_TUNE else RaindropTrainer(cfg)
+  File "F:\IIT_final_yr\Myproject\FypModel\pythonProject8\engine\trainer.py", line 359, in __init__
+    self.load_checkpoints(self.opt.TRAIN.START_STEP)
+  File "F:\IIT_final_yr\Myproject\FypModel\pythonProject8\engine\trainer.py", line 457, in load_checkpoints
+    checkpoints = torch.load("")
+  File "C:\Users\sevitha\AppData\Roaming\Python\Python38\site-packages\torch\serialization.py", line 791, in load
+    with _open_file_like(f, 'rb') as opened_file:
+  File "C:\Users\sevitha\AppData\Roaming\Python\Python38\site-packages\torch\serialization.py", line 271, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "C:\Users\sevitha\AppData\Roaming\Python\Python38\site-packages\torch\serialization.py", line 252, in __init__
+    super().__init__(open(name, mode))
+FileNotFoundError: [Errno 2] No such file or directory: ''

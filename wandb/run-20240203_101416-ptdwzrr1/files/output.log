@@ -1,0 +1,29 @@
+Train directory: F:/IIT_final_yr/Myproject/FypModel/pythonProject8/datasets/smoke_dataset\train
+Mask directory: F:/IIT_final_yr/Myproject/FypModel/pythonProject8/datasets/smoke_dataset\train\mask
+Dataset loaded Dataset size: 696
+a
+b
+c
+e
+f
+g
+Error loading checkpoints: 'NoneType' object has no attribute 'seek'. You can only torch.load from a file that is seekable. Please pre-load the data into a buffer like io.BytesIO and try to load from it instead.
+h
+i
+I0203 10:14:25.947544 18196 trainer.py:358] Checkpoints loading...
+I0203 10:14:25.952598 18196 trainer.py:480] GPU ID: 0
+W0203 10:14:26.118168 18196 warnings.py:109] C:\Users\sevitha\AppData\Roaming\Python\Python38\site-packages\torchvision\models\_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+W0203 10:14:26.118168 18196 warnings.py:109] C:\Users\sevitha\AppData\Roaming\Python\Python38\site-packages\torchvision\models\_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG19_Weights.IMAGENET1K_V1`. You can also use `weights=VGG19_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+raindrop trainer over
+Traceback (most recent call last):
+  File "F:\IIT_final_yr\Myproject\FypModel\pythonProject8\main.py", line 59, in <module>
+    trainer.run()
+  File "F:\IIT_final_yr\Myproject\FypModel\pythonProject8\engine\trainer.py", line 411, in run
+    g_loss.backward()
+  File "C:\Users\sevitha\AppData\Roaming\Python\Python38\site-packages\torch\_tensor.py", line 487, in backward
+    torch.autograd.backward(
+  File "C:\Users\sevitha\AppData\Roaming\Python\Python38\site-packages\torch\autograd\__init__.py", line 200, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt

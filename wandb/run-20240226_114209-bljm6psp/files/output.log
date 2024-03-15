@@ -1,0 +1,36 @@
+I0226 11:42:16.593365 416 trainer.py:424] Checkpoints loading...
+I0226 11:42:16.597012 416 trainer.py:554] GPU ID: 0
+W0226 11:42:16.666278 416 warnings.py:109] C:\Users\sevitha\anaconda3\envs\smoke2\lib\site-packages\torchvision\models\_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+W0226 11:42:16.667296 416 warnings.py:109] C:\Users\sevitha\anaconda3\envs\smoke2\lib\site-packages\torchvision\models\_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG19_Weights.IMAGENET1K_V1`. You can also use `weights=VGG19_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Dataset loaded Dataset size: 696
+a
+b
+c
+Initializing MPN, RIN, and Discriminator...
+Models initialized.
+Initializing optimizers...
+Optimizers initialized.
+g
+Error loading checkpoints: 'NoneType' object has no attribute 'seek'. You can only torch.load from a file that is seekable. Please pre-load the data into a buffer like io.BytesIO and try to load from it instead.
+h
+i
+raindrop over
+W0226 11:42:40.955835 416 warnings.py:109] F:\IIT_final_yr\Myproject\FypModel\lastTest\project8copies\proj8test2\losses\adversarial.py:15: UserWarning: The torch.cuda.*DtypeTensor constructors are no longer recommended. It's best to use methods such as torch.tensor(data, dtype=*, device='cuda') to create tensors. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\builder\windows\pytorch\torch\csrc\tensor\python_tensor.cpp:85.)
+  alpha = Tensor(np.random.random((real_samples.size(0), 1, 1, 1)))
+Batch loaded. Image shape: torch.Size([4, 3, 256, 256]) Label shape: torch.Size([4, 3, 256, 256])
+Traceback (most recent call last):
+  File "F:\IIT_final_yr\Myproject\FypModel\lastTest\project8copies\proj8test2\main.py", line 61, in <module>
+    trainer.run()
+  File "F:\IIT_final_yr\Myproject\FypModel\lastTest\project8copies\proj8test2\engine\trainer.py", line 471, in run
+    recon_loss = self.reconstruction_loss(output, y_imgs)
+  File "C:\Users\sevitha\anaconda3\envs\smoke2\lib\site-packages\torch\nn\modules\module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\sevitha\anaconda3\envs\smoke2\lib\site-packages\torch\nn\modules\module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\sevitha\anaconda3\envs\smoke2\lib\site-packages\torch\nn\modules\loss.py", line 101, in forward
+    return F.l1_loss(input, target, reduction=self.reduction)
+  File "C:\Users\sevitha\anaconda3\envs\smoke2\lib\site-packages\torch\nn\functional.py", line 3309, in l1_loss
+    return torch._C._nn.l1_loss(expanded_input, expanded_target, _Reduction.get_enum(reduction))
+KeyboardInterrupt

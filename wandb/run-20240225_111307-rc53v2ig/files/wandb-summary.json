@@ -1,0 +1,1 @@
+{"real_validity": NaN, "fake_validity": NaN, "gp": NaN, "_timestamp": 1708841077.9868772, "recon_loss": NaN, "sem_const_loss": NaN, "tex_const_loss": NaN, "adv_loss": NaN, "_runtime": 1290.6259140968323, "_step": 18, "_wandb": {"runtime": 1289}}

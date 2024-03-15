@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "F:\IIT_final_yr\Myproject\FypModel\pythonProject8\main.py", line 53, in <module>
+    trainer = Trainer(cfg) if not cfg.MODEL.RAINDROP_TUNE else RaindropTrainer(cfg)
+  File "F:\IIT_final_yr\Myproject\FypModel\pythonProject8\engine\trainer.py", line 320, in __init__
+    self.dataset = RaindropDataset(root=self.opt.DATASET.RAINDROP_ROOT, transform=self.transform, target_transform=self.transform)
+  File "C:\Users\sevitha\anaconda3\envs\smoke\lib\site-packages\yacs\config.py", line 141, in __getattr__
+    raise AttributeError(name)
+AttributeError: RAINDROP_ROOT

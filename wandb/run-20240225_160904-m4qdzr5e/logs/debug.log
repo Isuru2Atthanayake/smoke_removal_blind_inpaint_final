@@ -1,0 +1,27 @@
+2024-02-25 16:09:05,363 INFO    MainThread:8900 [wandb_setup.py:_flush():76] Current SDK version is 0.16.3
+2024-02-25 16:09:05,363 INFO    MainThread:8900 [wandb_setup.py:_flush():76] Configure stats pid to 8900
+2024-02-25 16:09:05,363 INFO    MainThread:8900 [wandb_setup.py:_flush():76] Loading settings from C:\Users\sevitha\.config\wandb\settings
+2024-02-25 16:09:05,363 INFO    MainThread:8900 [wandb_setup.py:_flush():76] Loading settings from F:\IIT_final_yr\Myproject\FypModel\lastTest\project8copies\proj8test1\wandb\settings
+2024-02-25 16:09:05,363 INFO    MainThread:8900 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-02-25 16:09:05,363 INFO    MainThread:8900 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-02-25 16:09:05,364 INFO    MainThread:8900 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'main.py', 'program_abspath': 'F:\\IIT_final_yr\\Myproject\\FypModel\\lastTest\\project8copies\\proj8test1\\main.py', 'program': 'F:\\IIT_final_yr\\Myproject\\FypModel\\lastTest\\project8copies\\proj8test1\\main.py'}
+2024-02-25 16:09:05,364 INFO    MainThread:8900 [wandb_init.py:_log_setup():526] Logging user logs to F:\IIT_final_yr\Myproject\FypModel\lastTest\project8copies\proj8test1\wandb\run-20240225_160904-m4qdzr5e\logs\debug.log
+2024-02-25 16:09:05,364 INFO    MainThread:8900 [wandb_init.py:_log_setup():527] Logging internal logs to F:\IIT_final_yr\Myproject\FypModel\lastTest\project8copies\proj8test1\wandb\run-20240225_160904-m4qdzr5e\logs\debug-internal.log
+2024-02-25 16:09:05,364 INFO    MainThread:8900 [wandb_init.py:init():566] calling init triggers
+2024-02-25 16:09:05,365 INFO    MainThread:8900 [wandb_init.py:init():573] wandb.init called with sweep_config: {}
+config: {}
+2024-02-25 16:09:05,365 INFO    MainThread:8900 [wandb_init.py:init():616] starting backend
+2024-02-25 16:09:05,365 INFO    MainThread:8900 [wandb_init.py:init():620] setting up manager
+2024-02-25 16:09:05,367 INFO    MainThread:8900 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn, using: spawn
+2024-02-25 16:09:05,369 INFO    MainThread:8900 [wandb_init.py:init():628] backend started and connected
+2024-02-25 16:09:05,372 INFO    MainThread:8900 [wandb_init.py:init():720] updated telemetry
+2024-02-25 16:09:05,374 INFO    MainThread:8900 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2024-02-25 16:09:06,774 INFO    MainThread:8900 [wandb_run.py:_on_init():2262] communicating current version
+2024-02-25 16:09:07,363 INFO    MainThread:8900 [wandb_run.py:_on_init():2271] got version response 
+2024-02-25 16:09:07,364 INFO    MainThread:8900 [wandb_init.py:init():804] starting run threads in backend
+2024-02-25 16:09:11,824 INFO    MainThread:8900 [wandb_run.py:_console_start():2241] atexit reg
+2024-02-25 16:09:11,824 INFO    MainThread:8900 [wandb_run.py:_redirect():2096] redirect: wrap_raw
+2024-02-25 16:09:11,824 INFO    MainThread:8900 [wandb_run.py:_redirect():2161] Wrapping output streams.
+2024-02-25 16:09:11,824 INFO    MainThread:8900 [wandb_run.py:_redirect():2186] Redirects installed.
+2024-02-25 16:09:11,825 INFO    MainThread:8900 [wandb_init.py:init():847] run started, returning control to user process
+2024-02-25 16:10:22,161 WARNING MsgRouterThr:8900 [router.py:message_loop():77] message_loop has been closed

@@ -1,0 +1,210 @@
+2024-01-30 10:27:02,741 INFO    StreamThr :11384 [internal.py:wandb_internal():86] W&B internal server running at pid: 11384, started at: 2024-01-30 10:27:02.740572
+2024-01-30 10:27:02,744 DEBUG   HandlerThread:11384 [handler.py:handle_request():146] handle_request: status
+2024-01-30 10:27:02,746 INFO    WriterThread:11384 [datastore.py:open_for_write():87] open: F:\IIT_final_yr\Myproject\FypModel\pythonProject8\wandb\run-20240130_102702-gek80c15\run-gek80c15.wandb
+2024-01-30 10:27:02,749 DEBUG   SenderThread:11384 [sender.py:send():382] send: header
+2024-01-30 10:27:02,815 DEBUG   SenderThread:11384 [sender.py:send():382] send: run
+2024-01-30 10:27:05,321 INFO    SenderThread:11384 [dir_watcher.py:__init__():211] watching files in: F:\IIT_final_yr\Myproject\FypModel\pythonProject8\wandb\run-20240130_102702-gek80c15\files
+2024-01-30 10:27:05,321 INFO    SenderThread:11384 [sender.py:_start_run_threads():1136] run started: gek80c15 with start time 1706590622.740571
+2024-01-30 10:27:05,330 DEBUG   HandlerThread:11384 [handler.py:handle_request():146] handle_request: check_version
+2024-01-30 10:27:05,330 DEBUG   SenderThread:11384 [sender.py:send_request():409] send_request: check_version
+2024-01-30 10:27:07,112 DEBUG   HandlerThread:11384 [handler.py:handle_request():146] handle_request: run_start
+2024-01-30 10:27:07,145 DEBUG   HandlerThread:11384 [system_info.py:__init__():27] System info init
+2024-01-30 10:27:07,145 DEBUG   HandlerThread:11384 [system_info.py:__init__():42] System info init done
+2024-01-30 10:27:07,145 INFO    HandlerThread:11384 [system_monitor.py:start():194] Starting system monitor
+2024-01-30 10:27:07,146 INFO    SystemMonitor:11384 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-01-30 10:27:07,146 INFO    HandlerThread:11384 [system_monitor.py:probe():214] Collecting system info
+2024-01-30 10:27:07,151 INFO    SystemMonitor:11384 [interfaces.py:start():190] Started cpu monitoring
+2024-01-30 10:27:07,152 INFO    SystemMonitor:11384 [interfaces.py:start():190] Started disk monitoring
+2024-01-30 10:27:07,155 INFO    SystemMonitor:11384 [interfaces.py:start():190] Started gpu monitoring
+2024-01-30 10:27:07,163 INFO    SystemMonitor:11384 [interfaces.py:start():190] Started memory monitoring
+2024-01-30 10:27:07,167 DEBUG   HandlerThread:11384 [system_info.py:probe():151] Probing system
+2024-01-30 10:27:07,184 INFO    SystemMonitor:11384 [interfaces.py:start():190] Started network monitoring
+2024-01-30 10:27:07,185 DEBUG   HandlerThread:11384 [system_info.py:_probe_git():136] Probing git
+2024-01-30 10:27:07,311 DEBUG   HandlerThread:11384 [system_info.py:_probe_git():144] Probing git done
+2024-01-30 10:27:07,311 DEBUG   HandlerThread:11384 [system_info.py:probe():199] Probing system done
+2024-01-30 10:27:07,311 DEBUG   HandlerThread:11384 [system_monitor.py:probe():223] {'os': 'Windows-10-10.0.22621-SP0', 'python': '3.8.18', 'heartbeatAt': '2024-01-30T04:57:07.176271', 'startedAt': '2024-01-30T04:57:02.641544', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'F:\\IIT_final_yr\\Myproject\\FypModel\\pythonProject8\\main.py', 'codePathLocal': 'main.py', 'codePath': 'main.py', 'git': {'remote': 'https://github.com/Isuru2Atthanayake/vcnet-smoke-image-inpainting.git', 'commit': '55777adae779574445a895132e543a4cd1acb193'}, 'email': 'isuru3.atthanayake@gmail.com', 'root': 'F:/IIT_final_yr/Myproject/FypModel/pythonProject8', 'host': 'LAPTOP-M6LR1M8T', 'username': 'sevitha', 'executable': 'C:\\Users\\sevitha\\anaconda3\\envs\\smoke\\python.exe', 'cpu_count': 4, 'cpu_count_logical': 8, 'cpu_freq': {'current': 3302.0, 'min': 0.0, 'max': 3302.0}, 'cpu_freq_per_core': [{'current': 3302.0, 'min': 0.0, 'max': 3302.0}], 'disk': {'/': {'total': 230.99937438964844, 'used': 176.78717803955078}}, 'gpu': 'NVIDIA GeForce RTX 3050 Laptop GPU', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3050 Laptop GPU', 'memory_total': 4294967296}], 'memory': {'total': 15.751945495605469}}
+2024-01-30 10:27:07,311 INFO    HandlerThread:11384 [system_monitor.py:probe():224] Finished collecting system info
+2024-01-30 10:27:07,312 INFO    HandlerThread:11384 [system_monitor.py:probe():227] Publishing system info
+2024-01-30 10:27:07,312 DEBUG   HandlerThread:11384 [system_info.py:_save_conda():208] Saving list of conda packages installed into the current environment
+2024-01-30 10:27:07,331 INFO    Thread-16 :11384 [dir_watcher.py:_on_file_created():271] file/dir created: F:\IIT_final_yr\Myproject\FypModel\pythonProject8\wandb\run-20240130_102702-gek80c15\files\conda-environment.yaml
+2024-01-30 10:27:11,383 INFO    Thread-16 :11384 [dir_watcher.py:_on_file_modified():288] file/dir modified: F:\IIT_final_yr\Myproject\FypModel\pythonProject8\wandb\run-20240130_102702-gek80c15\files\conda-environment.yaml
+2024-01-30 10:27:11,595 DEBUG   HandlerThread:11384 [system_info.py:_save_conda():220] Saving conda packages done
+2024-01-30 10:27:11,691 INFO    HandlerThread:11384 [system_monitor.py:probe():229] Finished publishing system info
+2024-01-30 10:27:11,701 DEBUG   HandlerThread:11384 [handler.py:handle_request():146] handle_request: status_report
+2024-01-30 10:27:11,702 DEBUG   SenderThread:11384 [sender.py:send():382] send: files
+2024-01-30 10:27:11,702 INFO    SenderThread:11384 [sender.py:_save_file():1403] saving file wandb-metadata.json with policy now
+2024-01-30 10:27:11,709 DEBUG   HandlerThread:11384 [handler.py:handle_request():146] handle_request: python_packages
+2024-01-30 10:27:11,709 DEBUG   SenderThread:11384 [sender.py:send_request():409] send_request: python_packages
+2024-01-30 10:27:11,710 DEBUG   HandlerThread:11384 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-30 10:27:11,711 DEBUG   SenderThread:11384 [sender.py:send_request():409] send_request: stop_status
+2024-01-30 10:27:11,715 DEBUG   HandlerThread:11384 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-30 10:27:12,397 INFO    Thread-16 :11384 [dir_watcher.py:_on_file_modified():288] file/dir modified: F:\IIT_final_yr\Myproject\FypModel\pythonProject8\wandb\run-20240130_102702-gek80c15\files\conda-environment.yaml
+2024-01-30 10:27:12,397 INFO    Thread-16 :11384 [dir_watcher.py:_on_file_created():271] file/dir created: F:\IIT_final_yr\Myproject\FypModel\pythonProject8\wandb\run-20240130_102702-gek80c15\files\requirements.txt
+2024-01-30 10:27:12,398 INFO    Thread-16 :11384 [dir_watcher.py:_on_file_created():271] file/dir created: F:\IIT_final_yr\Myproject\FypModel\pythonProject8\wandb\run-20240130_102702-gek80c15\files\wandb-metadata.json
+2024-01-30 10:27:12,722 DEBUG   HandlerThread:11384 [handler.py:handle_request():146] handle_request: poll_exit
+2024-01-30 10:27:13,535 DEBUG   SenderThread:11384 [sender.py:send():382] send: telemetry
+2024-01-30 10:27:13,535 DEBUG   HandlerThread:11384 [handler.py:handle_request():146] handle_request: status_report
+2024-01-30 10:27:13,539 DEBUG   SenderThread:11384 [sender.py:send():382] send: exit
+2024-01-30 10:27:13,539 INFO    SenderThread:11384 [sender.py:send_exit():589] handling exit code: 1
+2024-01-30 10:27:13,539 INFO    SenderThread:11384 [sender.py:send_exit():591] handling runtime: 4
+2024-01-30 10:27:13,541 INFO    SenderThread:11384 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-01-30 10:27:13,541 INFO    SenderThread:11384 [sender.py:send_exit():597] send defer
+2024-01-30 10:27:13,541 DEBUG   SenderThread:11384 [sender.py:send_request():409] send_request: poll_exit
+2024-01-30 10:27:13,542 DEBUG   HandlerThread:11384 [handler.py:handle_request():146] handle_request: defer
+2024-01-30 10:27:13,542 INFO    HandlerThread:11384 [handler.py:handle_request_defer():172] handle defer: 0
+2024-01-30 10:27:13,542 DEBUG   SenderThread:11384 [sender.py:send_request():409] send_request: defer
+2024-01-30 10:27:13,542 INFO    SenderThread:11384 [sender.py:send_request_defer():613] handle sender defer: 0
+2024-01-30 10:27:13,542 INFO    SenderThread:11384 [sender.py:transition_state():617] send defer: 1
+2024-01-30 10:27:13,543 DEBUG   HandlerThread:11384 [handler.py:handle_request():146] handle_request: defer
+2024-01-30 10:27:13,543 INFO    HandlerThread:11384 [handler.py:handle_request_defer():172] handle defer: 1
+2024-01-30 10:27:13,543 DEBUG   SenderThread:11384 [sender.py:send_request():409] send_request: defer
+2024-01-30 10:27:13,543 INFO    SenderThread:11384 [sender.py:send_request_defer():613] handle sender defer: 1
+2024-01-30 10:27:13,543 INFO    SenderThread:11384 [sender.py:transition_state():617] send defer: 2
+2024-01-30 10:27:13,543 DEBUG   HandlerThread:11384 [handler.py:handle_request():146] handle_request: defer
+2024-01-30 10:27:13,543 INFO    HandlerThread:11384 [handler.py:handle_request_defer():172] handle defer: 2
+2024-01-30 10:27:13,543 INFO    HandlerThread:11384 [system_monitor.py:finish():203] Stopping system monitor
+2024-01-30 10:27:13,544 INFO    HandlerThread:11384 [interfaces.py:finish():202] Joined cpu monitor
+2024-01-30 10:27:13,544 INFO    HandlerThread:11384 [interfaces.py:finish():202] Joined disk monitor
+2024-01-30 10:27:13,544 DEBUG   SystemMonitor:11384 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-01-30 10:27:13,557 DEBUG   SystemMonitor:11384 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-01-30 10:27:13,557 DEBUG   SystemMonitor:11384 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-01-30 10:27:13,585 INFO    HandlerThread:11384 [interfaces.py:finish():202] Joined gpu monitor
+2024-01-30 10:27:13,585 INFO    HandlerThread:11384 [interfaces.py:finish():202] Joined memory monitor
+2024-01-30 10:27:13,585 INFO    HandlerThread:11384 [interfaces.py:finish():202] Joined network monitor
+2024-01-30 10:27:13,586 DEBUG   SenderThread:11384 [sender.py:send_request():409] send_request: defer
+2024-01-30 10:27:13,586 INFO    SenderThread:11384 [sender.py:send_request_defer():613] handle sender defer: 2
+2024-01-30 10:27:13,586 INFO    SenderThread:11384 [sender.py:transition_state():617] send defer: 3
+2024-01-30 10:27:13,586 DEBUG   SenderThread:11384 [sender.py:send():382] send: stats
+2024-01-30 10:27:13,586 DEBUG   HandlerThread:11384 [handler.py:handle_request():146] handle_request: defer
+2024-01-30 10:27:13,587 INFO    HandlerThread:11384 [handler.py:handle_request_defer():172] handle defer: 3
+2024-01-30 10:27:13,587 DEBUG   SenderThread:11384 [sender.py:send_request():409] send_request: defer
+2024-01-30 10:27:13,587 INFO    SenderThread:11384 [sender.py:send_request_defer():613] handle sender defer: 3
+2024-01-30 10:27:13,587 INFO    SenderThread:11384 [sender.py:transition_state():617] send defer: 4
+2024-01-30 10:27:13,587 DEBUG   HandlerThread:11384 [handler.py:handle_request():146] handle_request: defer
+2024-01-30 10:27:13,587 INFO    HandlerThread:11384 [handler.py:handle_request_defer():172] handle defer: 4
+2024-01-30 10:27:13,587 DEBUG   SenderThread:11384 [sender.py:send_request():409] send_request: defer
+2024-01-30 10:27:13,587 INFO    SenderThread:11384 [sender.py:send_request_defer():613] handle sender defer: 4
+2024-01-30 10:27:13,588 INFO    SenderThread:11384 [sender.py:transition_state():617] send defer: 5
+2024-01-30 10:27:13,588 DEBUG   HandlerThread:11384 [handler.py:handle_request():146] handle_request: defer
+2024-01-30 10:27:13,588 INFO    HandlerThread:11384 [handler.py:handle_request_defer():172] handle defer: 5
+2024-01-30 10:27:13,588 DEBUG   SenderThread:11384 [sender.py:send():382] send: summary
+2024-01-30 10:27:13,588 INFO    SenderThread:11384 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-01-30 10:27:13,589 DEBUG   SenderThread:11384 [sender.py:send_request():409] send_request: defer
+2024-01-30 10:27:13,589 INFO    SenderThread:11384 [sender.py:send_request_defer():613] handle sender defer: 5
+2024-01-30 10:27:13,589 INFO    SenderThread:11384 [sender.py:transition_state():617] send defer: 6
+2024-01-30 10:27:13,589 DEBUG   HandlerThread:11384 [handler.py:handle_request():146] handle_request: defer
+2024-01-30 10:27:13,589 INFO    HandlerThread:11384 [handler.py:handle_request_defer():172] handle defer: 6
+2024-01-30 10:27:13,589 DEBUG   SenderThread:11384 [sender.py:send_request():409] send_request: defer
+2024-01-30 10:27:13,589 INFO    SenderThread:11384 [sender.py:send_request_defer():613] handle sender defer: 6
+2024-01-30 10:27:13,593 DEBUG   HandlerThread:11384 [handler.py:handle_request():146] handle_request: status_report
+2024-01-30 10:27:13,731 DEBUG   HandlerThread:11384 [handler.py:handle_request():146] handle_request: poll_exit
+2024-01-30 10:27:14,427 INFO    Thread-16 :11384 [dir_watcher.py:_on_file_created():271] file/dir created: F:\IIT_final_yr\Myproject\FypModel\pythonProject8\wandb\run-20240130_102702-gek80c15\files\wandb-summary.json
+2024-01-30 10:27:14,428 INFO    Thread-16 :11384 [dir_watcher.py:_on_file_created():271] file/dir created: F:\IIT_final_yr\Myproject\FypModel\pythonProject8\wandb\run-20240130_102702-gek80c15\files\output.log
+2024-01-30 10:27:14,511 INFO    SenderThread:11384 [sender.py:transition_state():617] send defer: 7
+2024-01-30 10:27:14,511 DEBUG   SenderThread:11384 [sender.py:send_request():409] send_request: poll_exit
+2024-01-30 10:27:14,511 DEBUG   HandlerThread:11384 [handler.py:handle_request():146] handle_request: defer
+2024-01-30 10:27:14,512 INFO    HandlerThread:11384 [handler.py:handle_request_defer():172] handle defer: 7
+2024-01-30 10:27:14,512 DEBUG   SenderThread:11384 [sender.py:send_request():409] send_request: defer
+2024-01-30 10:27:14,512 INFO    SenderThread:11384 [sender.py:send_request_defer():613] handle sender defer: 7
+2024-01-30 10:27:14,741 DEBUG   HandlerThread:11384 [handler.py:handle_request():146] handle_request: poll_exit
+2024-01-30 10:27:14,955 INFO    wandb-upload_0:11384 [upload_job.py:push():131] Uploaded file C:\Users\sevitha\AppData\Local\Temp\tmps5x8s1xdwandb\5ho3rr5d-wandb-metadata.json
+2024-01-30 10:27:15,441 INFO    Thread-16 :11384 [dir_watcher.py:_on_file_modified():288] file/dir modified: F:\IIT_final_yr\Myproject\FypModel\pythonProject8\wandb\run-20240130_102702-gek80c15\files\config.yaml
+2024-01-30 10:27:16,444 INFO    Thread-16 :11384 [dir_watcher.py:_on_file_modified():288] file/dir modified: F:\IIT_final_yr\Myproject\FypModel\pythonProject8\wandb\run-20240130_102702-gek80c15\files\output.log
+2024-01-30 10:27:17,564 INFO    SenderThread:11384 [sender.py:transition_state():617] send defer: 8
+2024-01-30 10:27:17,565 DEBUG   SenderThread:11384 [sender.py:send_request():409] send_request: poll_exit
+2024-01-30 10:27:17,565 DEBUG   HandlerThread:11384 [handler.py:handle_request():146] handle_request: defer
+2024-01-30 10:27:17,566 INFO    HandlerThread:11384 [handler.py:handle_request_defer():172] handle defer: 8
+2024-01-30 10:27:17,566 DEBUG   SenderThread:11384 [sender.py:send_request():409] send_request: defer
+2024-01-30 10:27:17,567 INFO    SenderThread:11384 [sender.py:send_request_defer():613] handle sender defer: 8
+2024-01-30 10:27:17,567 INFO    SenderThread:11384 [job_builder.py:build():296] Attempting to build job artifact
+2024-01-30 10:27:17,568 INFO    SenderThread:11384 [job_builder.py:_get_source_type():426] is repo sourced job
+2024-01-30 10:27:17,764 DEBUG   HandlerThread:11384 [handler.py:handle_request():146] handle_request: poll_exit
+2024-01-30 10:27:17,845 INFO    SenderThread:11384 [job_builder.py:build():402] adding wandb-job metadata file
+2024-01-30 10:27:17,852 INFO    SenderThread:11384 [sender.py:transition_state():617] send defer: 9
+2024-01-30 10:27:17,852 DEBUG   SenderThread:11384 [sender.py:send_request():409] send_request: poll_exit
+2024-01-30 10:27:17,853 DEBUG   HandlerThread:11384 [handler.py:handle_request():146] handle_request: defer
+2024-01-30 10:27:17,853 INFO    HandlerThread:11384 [handler.py:handle_request_defer():172] handle defer: 9
+2024-01-30 10:27:17,853 DEBUG   SenderThread:11384 [sender.py:send():382] send: artifact
+2024-01-30 10:27:18,465 INFO    Thread-16 :11384 [dir_watcher.py:_on_file_modified():288] file/dir modified: F:\IIT_final_yr\Myproject\FypModel\pythonProject8\wandb\run-20240130_102702-gek80c15\files\output.log
+2024-01-30 10:27:18,774 DEBUG   HandlerThread:11384 [handler.py:handle_request():146] handle_request: poll_exit
+2024-01-30 10:27:22,866 INFO    wandb-upload_1:11384 [upload_job.py:push():86] Skipped uploading C:\Users\sevitha\AppData\Local\wandb\wandb\artifacts\staging\tmpakys_gns
+2024-01-30 10:27:23,815 DEBUG   HandlerThread:11384 [handler.py:handle_request():146] handle_request: keepalive
+2024-01-30 10:27:24,162 INFO    wandb-upload_0:11384 [upload_job.py:push():89] Uploaded file C:\Users\sevitha\AppData\Local\wandb\wandb\artifacts\staging\tmpmwpela4c
+2024-01-30 10:27:28,302 INFO    SenderThread:11384 [sender.py:send_artifact():1494] sent artifact job-https___github.com_Isuru2Atthanayake_vcnet-smoke-image-inpainting.git_main.py - {'id': 'QXJ0aWZhY3Q6NzA3NDQwOTcy', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEzNDI1MzExNw==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NzA2NzA2ODc5', 'versionIndex': 3}}}
+2024-01-30 10:27:28,303 DEBUG   SenderThread:11384 [sender.py:send_request():409] send_request: defer
+2024-01-30 10:27:28,303 INFO    SenderThread:11384 [sender.py:send_request_defer():613] handle sender defer: 9
+2024-01-30 10:27:28,303 INFO    SenderThread:11384 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-01-30 10:27:28,303 DEBUG   HandlerThread:11384 [handler.py:handle_request():146] handle_request: status_report
+2024-01-30 10:27:28,570 INFO    SenderThread:11384 [dir_watcher.py:finish():388] scan: F:\IIT_final_yr\Myproject\FypModel\pythonProject8\wandb\run-20240130_102702-gek80c15\files
+2024-01-30 10:27:28,571 INFO    SenderThread:11384 [dir_watcher.py:finish():402] scan save: F:\IIT_final_yr\Myproject\FypModel\pythonProject8\wandb\run-20240130_102702-gek80c15\files\conda-environment.yaml conda-environment.yaml
+2024-01-30 10:27:28,571 INFO    SenderThread:11384 [dir_watcher.py:finish():402] scan save: F:\IIT_final_yr\Myproject\FypModel\pythonProject8\wandb\run-20240130_102702-gek80c15\files\config.yaml config.yaml
+2024-01-30 10:27:28,574 INFO    SenderThread:11384 [dir_watcher.py:finish():402] scan save: F:\IIT_final_yr\Myproject\FypModel\pythonProject8\wandb\run-20240130_102702-gek80c15\files\output.log output.log
+2024-01-30 10:27:28,574 INFO    SenderThread:11384 [dir_watcher.py:finish():402] scan save: F:\IIT_final_yr\Myproject\FypModel\pythonProject8\wandb\run-20240130_102702-gek80c15\files\requirements.txt requirements.txt
+2024-01-30 10:27:28,580 INFO    SenderThread:11384 [dir_watcher.py:finish():402] scan save: F:\IIT_final_yr\Myproject\FypModel\pythonProject8\wandb\run-20240130_102702-gek80c15\files\wandb-metadata.json wandb-metadata.json
+2024-01-30 10:27:28,580 INFO    SenderThread:11384 [dir_watcher.py:finish():402] scan save: F:\IIT_final_yr\Myproject\FypModel\pythonProject8\wandb\run-20240130_102702-gek80c15\files\wandb-summary.json wandb-summary.json
+2024-01-30 10:27:28,581 INFO    SenderThread:11384 [sender.py:transition_state():617] send defer: 10
+2024-01-30 10:27:28,581 DEBUG   SenderThread:11384 [sender.py:send_request():409] send_request: poll_exit
+2024-01-30 10:27:28,582 DEBUG   HandlerThread:11384 [handler.py:handle_request():146] handle_request: defer
+2024-01-30 10:27:28,582 INFO    HandlerThread:11384 [handler.py:handle_request_defer():172] handle defer: 10
+2024-01-30 10:27:28,585 DEBUG   SenderThread:11384 [sender.py:send_request():409] send_request: defer
+2024-01-30 10:27:28,585 INFO    SenderThread:11384 [sender.py:send_request_defer():613] handle sender defer: 10
+2024-01-30 10:27:28,585 INFO    SenderThread:11384 [file_pusher.py:finish():175] shutting down file pusher
+2024-01-30 10:27:28,864 DEBUG   HandlerThread:11384 [handler.py:handle_request():146] handle_request: keepalive
+2024-01-30 10:27:28,864 DEBUG   HandlerThread:11384 [handler.py:handle_request():146] handle_request: poll_exit
+2024-01-30 10:27:28,865 DEBUG   SenderThread:11384 [sender.py:send_request():409] send_request: poll_exit
+2024-01-30 10:27:29,771 INFO    wandb-upload_1:11384 [upload_job.py:push():131] Uploaded file F:\IIT_final_yr\Myproject\FypModel\pythonProject8\wandb\run-20240130_102702-gek80c15\files\conda-environment.yaml
+2024-01-30 10:27:29,876 DEBUG   HandlerThread:11384 [handler.py:handle_request():146] handle_request: poll_exit
+2024-01-30 10:27:29,877 DEBUG   SenderThread:11384 [sender.py:send_request():409] send_request: poll_exit
+2024-01-30 10:27:30,382 INFO    wandb-upload_2:11384 [upload_job.py:push():131] Uploaded file F:\IIT_final_yr\Myproject\FypModel\pythonProject8\wandb\run-20240130_102702-gek80c15\files\output.log
+2024-01-30 10:27:30,656 INFO    wandb-upload_3:11384 [upload_job.py:push():131] Uploaded file F:\IIT_final_yr\Myproject\FypModel\pythonProject8\wandb\run-20240130_102702-gek80c15\files\requirements.txt
+2024-01-30 10:27:30,888 DEBUG   HandlerThread:11384 [handler.py:handle_request():146] handle_request: poll_exit
+2024-01-30 10:27:30,889 DEBUG   SenderThread:11384 [sender.py:send_request():409] send_request: poll_exit
+2024-01-30 10:27:31,063 INFO    wandb-upload_0:11384 [upload_job.py:push():131] Uploaded file F:\IIT_final_yr\Myproject\FypModel\pythonProject8\wandb\run-20240130_102702-gek80c15\files\config.yaml
+2024-01-30 10:27:31,443 INFO    wandb-upload_4:11384 [upload_job.py:push():131] Uploaded file F:\IIT_final_yr\Myproject\FypModel\pythonProject8\wandb\run-20240130_102702-gek80c15\files\wandb-summary.json
+2024-01-30 10:27:31,651 INFO    Thread-15 :11384 [sender.py:transition_state():617] send defer: 11
+2024-01-30 10:27:31,652 DEBUG   HandlerThread:11384 [handler.py:handle_request():146] handle_request: defer
+2024-01-30 10:27:31,653 INFO    HandlerThread:11384 [handler.py:handle_request_defer():172] handle defer: 11
+2024-01-30 10:27:31,653 DEBUG   SenderThread:11384 [sender.py:send_request():409] send_request: defer
+2024-01-30 10:27:31,654 INFO    SenderThread:11384 [sender.py:send_request_defer():613] handle sender defer: 11
+2024-01-30 10:27:31,654 INFO    SenderThread:11384 [file_pusher.py:join():181] waiting for file pusher
+2024-01-30 10:27:31,654 INFO    SenderThread:11384 [sender.py:transition_state():617] send defer: 12
+2024-01-30 10:27:31,654 DEBUG   HandlerThread:11384 [handler.py:handle_request():146] handle_request: defer
+2024-01-30 10:27:31,655 INFO    HandlerThread:11384 [handler.py:handle_request_defer():172] handle defer: 12
+2024-01-30 10:27:31,655 DEBUG   SenderThread:11384 [sender.py:send_request():409] send_request: defer
+2024-01-30 10:27:31,655 INFO    SenderThread:11384 [sender.py:send_request_defer():613] handle sender defer: 12
+2024-01-30 10:27:31,656 INFO    SenderThread:11384 [file_stream.py:finish():595] file stream finish called
+2024-01-30 10:27:31,901 DEBUG   HandlerThread:11384 [handler.py:handle_request():146] handle_request: poll_exit
+2024-01-30 10:27:32,200 INFO    SenderThread:11384 [file_stream.py:finish():599] file stream finish is done
+2024-01-30 10:27:32,200 INFO    SenderThread:11384 [sender.py:transition_state():617] send defer: 13
+2024-01-30 10:27:32,200 DEBUG   SenderThread:11384 [sender.py:send_request():409] send_request: poll_exit
+2024-01-30 10:27:32,201 DEBUG   HandlerThread:11384 [handler.py:handle_request():146] handle_request: defer
+2024-01-30 10:27:32,201 INFO    HandlerThread:11384 [handler.py:handle_request_defer():172] handle defer: 13
+2024-01-30 10:27:32,203 DEBUG   SenderThread:11384 [sender.py:send_request():409] send_request: defer
+2024-01-30 10:27:32,203 INFO    SenderThread:11384 [sender.py:send_request_defer():613] handle sender defer: 13
+2024-01-30 10:27:32,203 INFO    SenderThread:11384 [sender.py:transition_state():617] send defer: 14
+2024-01-30 10:27:32,203 DEBUG   HandlerThread:11384 [handler.py:handle_request():146] handle_request: defer
+2024-01-30 10:27:32,203 INFO    HandlerThread:11384 [handler.py:handle_request_defer():172] handle defer: 14
+2024-01-30 10:27:32,205 DEBUG   SenderThread:11384 [sender.py:send():382] send: final
+2024-01-30 10:27:32,205 DEBUG   SenderThread:11384 [sender.py:send():382] send: footer
+2024-01-30 10:27:32,205 DEBUG   SenderThread:11384 [sender.py:send_request():409] send_request: defer
+2024-01-30 10:27:32,205 INFO    SenderThread:11384 [sender.py:send_request_defer():613] handle sender defer: 14
+2024-01-30 10:27:32,205 DEBUG   HandlerThread:11384 [handler.py:handle_request():146] handle_request: poll_exit
+2024-01-30 10:27:32,207 DEBUG   SenderThread:11384 [sender.py:send_request():409] send_request: poll_exit
+2024-01-30 10:27:32,208 DEBUG   HandlerThread:11384 [handler.py:handle_request():146] handle_request: poll_exit
+2024-01-30 10:27:32,208 DEBUG   HandlerThread:11384 [handler.py:handle_request():146] handle_request: server_info
+2024-01-30 10:27:32,208 DEBUG   HandlerThread:11384 [handler.py:handle_request():146] handle_request: get_summary
+2024-01-30 10:27:32,209 DEBUG   HandlerThread:11384 [handler.py:handle_request():146] handle_request: sampled_history
+2024-01-30 10:27:32,209 DEBUG   HandlerThread:11384 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-30 10:27:32,210 DEBUG   HandlerThread:11384 [handler.py:handle_request():146] handle_request: job_info
+2024-01-30 10:27:32,210 DEBUG   SenderThread:11384 [sender.py:send_request():409] send_request: poll_exit
+2024-01-30 10:27:32,210 DEBUG   SenderThread:11384 [sender.py:send_request():409] send_request: server_info
+2024-01-30 10:27:33,095 DEBUG   SenderThread:11384 [sender.py:send_request():409] send_request: job_info
+2024-01-30 10:27:33,097 INFO    MainThread:11384 [wandb_run.py:_footer_history_summary_info():3857] rendering history
+2024-01-30 10:27:33,097 INFO    MainThread:11384 [wandb_run.py:_footer_history_summary_info():3889] rendering summary
+2024-01-30 10:27:33,098 INFO    MainThread:11384 [wandb_run.py:_footer_sync_info():3816] logging synced files
+2024-01-30 10:27:33,098 DEBUG   HandlerThread:11384 [handler.py:handle_request():146] handle_request: shutdown
+2024-01-30 10:27:33,099 INFO    HandlerThread:11384 [handler.py:finish():869] shutting down handler
+2024-01-30 10:27:33,220 INFO    WriterThread:11384 [datastore.py:close():296] close: F:\IIT_final_yr\Myproject\FypModel\pythonProject8\wandb\run-20240130_102702-gek80c15\run-gek80c15.wandb
+2024-01-30 10:27:34,100 INFO    SenderThread:11384 [sender.py:finish():1572] shutting down sender
+2024-01-30 10:27:34,100 INFO    SenderThread:11384 [file_pusher.py:finish():175] shutting down file pusher
+2024-01-30 10:27:34,101 INFO    SenderThread:11384 [file_pusher.py:join():181] waiting for file pusher

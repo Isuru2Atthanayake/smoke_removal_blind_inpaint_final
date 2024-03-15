@@ -1,0 +1,26 @@
+I0202 22:04:07.842484 18384 trainer.py:358] Checkpoints loading...
+I0202 22:04:07.854642 18384 trainer.py:480] GPU ID: 0
+W0202 22:04:07.975744 18384 warnings.py:109] C:\Users\sevitha\AppData\Roaming\Python\Python38\site-packages\torchvision\models\_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+W0202 22:04:07.975744 18384 warnings.py:109] C:\Users\sevitha\AppData\Roaming\Python\Python38\site-packages\torchvision\models\_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG19_Weights.IMAGENET1K_V1`. You can also use `weights=VGG19_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Train directory: F:/IIT_final_yr/Myproject/FypModel/pythonProject8/datasets/smoke_dataset\train
+Mask directory: F:/IIT_final_yr/Myproject/FypModel/pythonProject8/datasets/smoke_dataset\train\mask
+Dataset loaded Dataset size: 696
+a
+b
+c
+e
+f
+g
+Error loading checkpoints: 'NoneType' object has no attribute 'seek'. You can only torch.load from a file that is seekable. Please pre-load the data into a buffer like io.BytesIO and try to load from it instead.
+h
+i
+raindrop trainer over
+Traceback (most recent call last):
+  File "F:\IIT_final_yr\Myproject\FypModel\pythonProject8\main.py", line 58, in <module>
+    trainer.run()
+  File "F:\IIT_final_yr\Myproject\FypModel\pythonProject8\engine\trainer.py", line 384, in run
+    gp = compute_gradient_penalty(self.discriminator, output.data, y_imgs.data)
+  File "F:\IIT_final_yr\Myproject\FypModel\pythonProject8\losses\adversarial.py", line 15, in compute_gradient_penalty
+    alpha = Tensor(np.random.random((real_samples.size(0), 1, 1, 1)))

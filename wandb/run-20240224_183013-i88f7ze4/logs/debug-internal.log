@@ -1,0 +1,4 @@
+2024-02-24 18:30:13,751 INFO    StreamThr :16140 [internal.py:wandb_internal():86] W&B internal server running at pid: 16140, started at: 2024-02-24 18:30:13.750116
+2024-02-24 18:30:13,753 DEBUG   HandlerThread:16140 [handler.py:handle_request():146] handle_request: status
+2024-02-24 18:30:13,755 INFO    WriterThread:16140 [datastore.py:open_for_write():87] open: F:\IIT_final_yr\Myproject\FypModel\project8copies\pythonProject8\wandb\run-20240224_183013-i88f7ze4\run-i88f7ze4.wandb
+2024-02-24 18:30:13,758 DEBUG   SenderThread:16140 [sender.py:send():382] send: header

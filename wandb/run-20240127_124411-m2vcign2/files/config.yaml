@@ -1,0 +1,161 @@
+wandb_version: 1
+
+SYSTEM:
+  desc: null
+  value:
+    NUM_GPU: 1
+    NUM_WORKERS: 4
+WANDB:
+  desc: null
+  value:
+    PROJECT_NAME: vcnet-blind-image-inpainting
+    ENTITY: vvgl-ozu
+    RUN: 16
+    LOG_DIR: ./logs/VCNet_Raindrop_302000step_4bs_0.0002lr_1gpu_16run
+    NUM_ROW: 0
+TRAIN:
+  desc: null
+  value:
+    NUM_TOTAL_STEP: 302000
+    START_STEP: 0
+    BATCH_SIZE: 4
+    SHUFFLE: true
+    NUM_STEPS_FOR_JOINT: 20000
+    LOG_INTERVAL: 200
+    SAVE_INTERVAL: 10000
+    SAVE_DIR: ./weights
+    RESUME: true
+    VISUALIZE_INTERVAL: 200
+    TUNE: false
+MODEL:
+  desc: null
+  value:
+    NAME: VCNet
+    IS_TRAIN: true
+    RAINDROP_TUNE: true
+    RAINDROP_WEIGHTS: null
+    RAINDROP_VISUALIZE_INTERVAL: 20
+    RAINDROP_LOG_INTERVAL: 20
+    RAINDROP_SAVE_INTERVAL: 200
+    MPN:
+      NAME: MaskPredictionNetwork
+      NUM_CHANNELS: 64
+      NECK_CHANNELS: 128
+      LR: 0.001
+      BETAS:
+      - 0.5
+      - 0.9
+      SCHEDULER: []
+      DECAY_RATE: 0.0
+      LOSS_COEFF: 2.0
+    RIN:
+      NAME: RobustInpaintingNetwork
+      NUM_CHANNELS: 32
+      NECK_CHANNELS: 128
+      LR: 0.0001
+      BETAS:
+      - 0.5
+      - 0.9
+      SCHEDULER: []
+      DECAY_RATE: 0.0
+      LOSS_COEFF: 1.0
+      EMBRACE: true
+    D:
+      NAME: 1-ChOutputDiscriminator
+      NUM_CHANNELS: 64
+      LR: 0.001
+      BETAS:
+      - 0.5
+      - 0.9
+      SCHEDULER: []
+      DECAY_RATE: 0.5
+      NUM_CRITICS: 5
+    JOINT:
+      NAME: JointNetwork
+      LR: 0.0002
+      BETAS:
+      - 0.5
+      - 0.9
+      SCHEDULER: []
+      DECAY_RATE: 0.5
+OPTIM:
+  desc: null
+  value:
+    GP: 10
+    MASK: 1
+    RECON: 1.4
+    SEMANTIC: 0.0001
+    TEXTURE: 0.001
+    ADVERSARIAL: 0.001
+DATASET:
+  desc: null
+  value:
+    NAME: Raindrop
+    ROOT: ./datasets/ffhq/images1024x1024
+    CONT_ROOT: ./datasets/CelebAMask-HQ
+    IMAGENET: ./datasets/ImageNet/
+    RAINDROP_ROOT: ./datasets/raindrop/train20/train
+    SIZE: 256
+    MEAN:
+    - 0.5
+    - 0.5
+    - 0.5
+    STD:
+    - 0.5
+    - 0.5
+    - 0.5
+MASK:
+  desc: null
+  value:
+    MIN_NUM_VERTEX: 8
+    MAX_NUM_VERTEX: 24
+    MEAN_ANGLE: 1.2566370614359172
+    ANGLE_RANGE: 0.20943951023931953
+    MIN_WIDTH: 8
+    MAX_WIDTH: 16
+    NUM_ITER_SMOOTHING: 3
+    MIN_REMOVAL_RATIO: 0.2
+    MAX_REMOVAL_RATIO: 0.5
+    GAUS_K_SIZE: 15
+    SIGMA: 4
+TEST:
+  desc: null
+  value:
+    OUTPUT_DIR: ./outputs
+    ABLATION: false
+    WEIGHTS: null
+    BATCH_SIZE: 64
+    ITER: 4
+    MODE: 7
+    IMG_ID: 52
+    C_IMG_ID: 38
+    BRUSH_COLOR: RED
+    GRAFFITI_PATH: ./datasets/graffiti-dataset/dataset/graffiti_sample/000001ff0013ffff.p
+    TEXT: hello world
+    FONT: /usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf
+    FONT_SIZE: 24
+_wandb:
+  desc: null
+  value:
+    python_version: 3.11.7
+    cli_version: 0.16.2
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1706339651.725655
+    t:
+      1:
+      - 1
+      - 41
+      - 51
+      - 55
+      - 79
+      3:
+      - 16
+      - 23
+      4: 3.11.7
+      5: 0.16.2
+      8:
+      - 3
+      - 5
+      13: windows-amd64

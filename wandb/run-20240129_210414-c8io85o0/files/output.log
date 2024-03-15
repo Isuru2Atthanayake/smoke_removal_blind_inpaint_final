@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "F:\IIT_final_yr\Myproject\FypModel\pythonProject8\main.py", line 53, in <module>
+    trainer = Trainer(cfg) if not cfg.MODEL.RAINDROP_TUNE else RaindropTrainer(cfg)
+  File "F:\IIT_final_yr\Myproject\FypModel\pythonProject8\engine\trainer.py", line 332, in __init__
+    for i, (image, label) in enumerate(self.train_dataset):
+  File "C:\Users\sevitha\AppData\Roaming\Python\Python38\site-packages\torchvision\datasets\folder.py", line 233, in __getitem__
+    target = self.target_transform(target)
+  File "F:\IIT_final_yr\Myproject\FypModel\pythonProject8\engine\trainer.py", line 329, in <lambda>
+    target_transform=lambda x: 0 if 'mask' in x[0] else (
+TypeError: 'int' object is not subscriptable

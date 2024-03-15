@@ -1,0 +1,28 @@
+I0204 11:09:05.974536 12332 trainer.py:358] Checkpoints loading...
+I0204 11:09:05.977755 12332 trainer.py:480] GPU ID: 0
+W0204 11:09:06.106922 12332 warnings.py:109] C:\Users\sevitha\AppData\Roaming\Python\Python38\site-packages\torchvision\models\_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+W0204 11:09:06.106922 12332 warnings.py:109] C:\Users\sevitha\AppData\Roaming\Python\Python38\site-packages\torchvision\models\_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG19_Weights.IMAGENET1K_V1`. You can also use `weights=VGG19_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Train directory: F:/IIT_final_yr/Myproject/FypModel/pythonProject8/datasets/smoke_dataset\train
+Mask directory: F:/IIT_final_yr/Myproject/FypModel/pythonProject8/datasets/smoke_dataset\train\mask
+Dataset loaded Dataset size: 696
+a
+b
+c
+e
+f
+g
+Error loading checkpoints: 'NoneType' object has no attribute 'seek'. You can only torch.load from a file that is seekable. Please pre-load the data into a buffer like io.BytesIO and try to load from it instead.
+h
+i
+raindrop trainer over
+An AttributeError occurred: module 'numpy' has no attribute 'bool'.
+`np.bool` was a deprecated alias for the builtin `bool`. To avoid this error in existing code, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+The aliases was originally deprecated in NumPy 1.20; for more details and guidance see the original release note at:
+    https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+This could be due to the use of deprecated NumPy aliases.
+Consider updating your code to use 'bool' instead of 'np.bool'.
+I0204 11:28:37.038451 12332 trainer.py:422]  [Step: 20/302000 (0.006622516556291391%)] D Loss: nan G Loss: nan
+W0204 11:28:38.044609 12332 warnings.py:109] C:\Users\sevitha\anaconda3\envs\smoke\lib\site-packages\pandas\_testing.py:24: FutureWarning: In the future `np.bool` will be defined as the corresponding NumPy scalar.
+  import pandas._libs.testing as _testing

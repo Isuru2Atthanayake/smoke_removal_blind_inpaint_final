@@ -1,0 +1,53 @@
+{
+    "os": "Windows-10-10.0.22621-SP0",
+    "python": "3.8.18",
+    "heartbeatAt": "2024-01-30T04:30:57.226703",
+    "startedAt": "2024-01-30T04:30:50.603969",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "F:\\IIT_final_yr\\Myproject\\FypModel\\pythonProject8\\main.py",
+    "codePathLocal": "main.py",
+    "codePath": "main.py",
+    "git": {
+        "remote": "https://github.com/Isuru2Atthanayake/vcnet-smoke-image-inpainting.git",
+        "commit": "55777adae779574445a895132e543a4cd1acb193"
+    },
+    "email": "isuru3.atthanayake@gmail.com",
+    "root": "F:/IIT_final_yr/Myproject/FypModel/pythonProject8",
+    "host": "LAPTOP-M6LR1M8T",
+    "username": "sevitha",
+    "executable": "C:\\Users\\sevitha\\anaconda3\\envs\\smoke\\python.exe",
+    "cpu_count": 4,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 3302.0,
+        "min": 0.0,
+        "max": 3302.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3302.0,
+            "min": 0.0,
+            "max": 3302.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 230.99937438964844,
+            "used": 176.78712463378906
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 3050 Laptop GPU",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+            "memory_total": 4294967296
+        }
+    ],
+    "memory": {
+        "total": 15.751945495605469
+    }
+}

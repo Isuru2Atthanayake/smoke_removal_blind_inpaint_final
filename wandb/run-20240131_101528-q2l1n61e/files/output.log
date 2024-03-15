@@ -1,0 +1,158 @@
+I0131 10:15:39.509667 2968 trainer.py:358] Checkpoints loading...
+I0131 10:15:39.522496 2968 trainer.py:477] GPU ID: 0
+W0131 10:15:39.684985 2968 warnings.py:109] C:\Users\sevitha\AppData\Roaming\Python\Python38\site-packages\torchvision\models\_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+W0131 10:15:39.684985 2968 warnings.py:109] C:\Users\sevitha\AppData\Roaming\Python\Python38\site-packages\torchvision\models\_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG19_Weights.IMAGENET1K_V1`. You can also use `weights=VGG19_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Downloading: "https://download.pytorch.org/models/vgg19-dcbb9e9d.pth" to C:\Users\sevitha/.cache\torch\hub\checkpoints\vgg19-dcbb9e9d.pth
+Train directory: F:/IIT_final_yr/Myproject/FypModel/pythonProject8/datasets/smoke_dataset\train
+Mask directory: F:/IIT_final_yr/Myproject/FypModel/pythonProject8/datasets/smoke_dataset\train\mask
+Dataset loaded Dataset size: 696
+a
+b
+c
+e
+f
+g
+Error loading checkpoints: 'NoneType' object has no attribute 'seek'. You can only torch.load from a file that is seekable. Please pre-load the data into a buffer like io.BytesIO and try to load from it instead.
+h
+i
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|██████████| 548M/548M [03:22<00:00, 2.84MB/s]
+raindrop trainer over
+I0131 10:41:01.609262 2968 trainer.py:422]  [Step: 20/302000 (0.006622516556291391%)] D Loss: nan G Loss: nan
+W0131 10:41:02.700721 2968 warnings.py:109] C:\Users\sevitha\anaconda3\envs\smoke\lib\site-packages\pandas\_testing.py:24: FutureWarning: In the future `np.bool` will be defined as the corresponding NumPy scalar.  (This may have returned Python scalars in past versions.
+  import pandas._libs.testing as _testing
+Traceback (most recent call last):
+  File "F:\IIT_final_yr\Myproject\FypModel\pythonProject8\main.py", line 58, in <module>
+    trainer.run()
+  File "F:\IIT_final_yr\Myproject\FypModel\pythonProject8\engine\trainer.py", line 426, in run
+    self.wandb.log({"examples": [
+  File "C:\Users\sevitha\anaconda3\envs\smoke\lib\site-packages\wandb\sdk\wandb_run.py", line 420, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\sevitha\anaconda3\envs\smoke\lib\site-packages\wandb\sdk\wandb_run.py", line 371, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "C:\Users\sevitha\anaconda3\envs\smoke\lib\site-packages\wandb\sdk\wandb_run.py", line 361, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\sevitha\anaconda3\envs\smoke\lib\site-packages\wandb\sdk\wandb_run.py", line 1820, in log
+    self._log(data=data, step=step, commit=commit)
+  File "C:\Users\sevitha\anaconda3\envs\smoke\lib\site-packages\wandb\sdk\wandb_run.py", line 1595, in _log
+    self._partial_history_callback(data, step, commit)
+  File "C:\Users\sevitha\anaconda3\envs\smoke\lib\site-packages\wandb\sdk\wandb_run.py", line 1467, in _partial_history_callback
+    self._backend.interface.publish_partial_history(
+  File "C:\Users\sevitha\anaconda3\envs\smoke\lib\site-packages\wandb\sdk\interface\interface.py", line 558, in publish_partial_history
+    data = history_dict_to_json(run, data, step=user_step, ignore_copy_err=True)
+  File "C:\Users\sevitha\anaconda3\envs\smoke\lib\site-packages\wandb\sdk\data_types\utils.py", line 52, in history_dict_to_json
+    payload[key] = val_to_json(
+  File "C:\Users\sevitha\anaconda3\envs\smoke\lib\site-packages\wandb\sdk\data_types\utils.py", line 82, in val_to_json
+    if util.is_pandas_data_frame(val):
+  File "C:\Users\sevitha\anaconda3\envs\smoke\lib\site-packages\wandb\util.py", line 449, in is_pandas_data_frame
+    import pandas as pd
+  File "C:\Users\sevitha\anaconda3\envs\smoke\lib\site-packages\pandas\__init__.py", line 180, in <module>
+    import pandas.testing
+  File "C:\Users\sevitha\anaconda3\envs\smoke\lib\site-packages\pandas\testing.py", line 5, in <module>
+    from pandas._testing import (
+  File "C:\Users\sevitha\anaconda3\envs\smoke\lib\site-packages\pandas\_testing.py", line 24, in <module>
+    import pandas._libs.testing as _testing
+  File "pandas\_libs\testing.pyx", line 10, in init pandas._libs.testing
+  File "C:\Users\sevitha\AppData\Roaming\Python\Python38\site-packages\numpy\__init__.py", line 284, in __getattr__
+    raise AttributeError("module {!r} has no attribute "
+AttributeError: module 'numpy' has no attribute 'bool'

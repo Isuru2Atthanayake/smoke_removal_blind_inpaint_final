@@ -1,0 +1,18 @@
+I0131 09:43:25.481860 23092 trainer.py:358] Checkpoints loading...
+Traceback (most recent call last):
+  File "F:\IIT_final_yr\Myproject\FypModel\pythonProject8\main.py", line 54, in <module>
+    trainer = Trainer(cfg) if not cfg.MODEL.RAINDROP_TUNE else RaindropTrainer(cfg)
+  File "F:\IIT_final_yr\Myproject\FypModel\pythonProject8\engine\trainer.py", line 359, in __init__
+    self.load_checkpoints(self.opt.TRAIN.START_STEP)
+  File "F:\IIT_final_yr\Myproject\FypModel\pythonProject8\engine\trainer.py", line 455, in load_checkpoints
+    print("load checkpint weight"+ self.opt.MODEL.RAINDROP_WEIGHTS)
+TypeError: can only concatenate str (not "NoneType") to str
+Train directory: F:/IIT_final_yr/Myproject/FypModel/pythonProject8/datasets/smoke_dataset\train
+Mask directory: F:/IIT_final_yr/Myproject/FypModel/pythonProject8/datasets/smoke_dataset\train\mask
+Dataset loaded Dataset size: 696
+a
+b
+c
+e
+f
+g
